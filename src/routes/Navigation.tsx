@@ -5,7 +5,7 @@ import logo from '../assets/react.svg'
 
 export const Navigation = () => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<span>Loading...</span>}>
     <BrowserRouter>
         <div className="main-layout">
             <nav>
@@ -28,9 +28,9 @@ export const Navigation = () => {
 
             <Routes>
                 {
-                    routes.map(({ path, Component, to }) => (
+                    routes.map(({ path, Component }) => (
                         <Route
-                            key={to}
+                            key={path}
                             path={path}
                             element={<Component />}
                         />
