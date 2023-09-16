@@ -20,9 +20,9 @@ code {
 
 nav {
   background-color: #363a45;
-  height: 100vh;
+  height: calc(100vh - 30px);
   margin-right: 15px;
-  overflow-y: scroll;
+  padding-top: 30px;
   text-align: center;
   width: 250px;
 }
